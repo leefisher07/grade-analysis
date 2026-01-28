@@ -1,0 +1,98 @@
+{
+  "kindergarten": [
+    {
+      "name": "王小宝",
+      "gender": "男",
+      "tags": ["活泼好动", "爱笑", "喜欢分享", "善于表达", "团队意识强"],
+      "styles": ["lively-horse", "warm-gentle", "detail-narrative"]
+    },
+    {
+      "name": "李欣怡",
+      "gender": "女",
+      "tags": ["安静乖巧", "细心", "爱护玩具", "善良温柔", "喜欢画画"],
+      "styles": ["warm-gentle", "detail-narrative", "lively-horse"]
+    },
+    {
+      "name": "张天天",
+      "gender": "男",
+      "tags": ["好奇心强", "勇敢", "爱提问", "动手能力强", "爱吃饭"],
+      "styles": ["detail-narrative", "lively-horse", "warm-gentle"]
+    },
+    {
+      "name": "陈美美",
+      "gender": "女",
+      "tags": ["有礼貌", "爱帮助", "午睡乖", "喜欢唱歌", "开朗活泼"],
+      "styles": ["lively-horse", "detail-narrative", "warm-gentle"]
+    },
+    {
+      "name": "刘小虎",
+      "gender": "男",
+      "tags": ["精力充沛", "合群", "爱运动", "勇于尝试", "进步明显"],
+      "styles": ["warm-gentle", "lively-horse", "detail-narrative"]
+    }
+  ],
+  "primary": [
+    {
+      "name": "周思远",
+      "gender": "男",
+      "tags": ["成绩优秀", "爱读书", "思维活跃", "乐于助人", "有责任心"],
+      "styles": ["dragon-horse", "enthusiastic", "poetic"]
+    },
+    {
+      "name": "赵雨萱",
+      "gender": "女",
+      "tags": ["写作优秀", "文静内秀", "善于思考", "认真负责", "进步显著"],
+      "styles": ["poetic", "enthusiastic", "dragon-horse"]
+    },
+    {
+      "name": "孙浩宇",
+      "gender": "男",
+      "tags": ["数学突出", "勤奋刻苦", "积极发言", "团结同学", "爱运动"],
+      "styles": ["enthusiastic", "dragon-horse", "poetic"]
+    },
+    {
+      "name": "吴诗琪",
+      "gender": "女",
+      "tags": ["全面发展", "多才多艺", "自信阳光", "组织能力强", "乐观向上"],
+      "styles": ["dragon-horse", "poetic", "enthusiastic"]
+    },
+    {
+      "name": "郑晨阳",
+      "gender": "男",
+      "tags": ["认真细致", "善于总结", "稳重踏实", "尊敬师长", "品学兼优"],
+      "styles": ["poetic", "dragon-horse", "enthusiastic"]
+    }
+  ],
+  "middle": [
+    {
+      "name": "林梓涵",
+      "gender": "女",
+      "tags": ["自律自强", "成绩优异", "独立思考", "目标明确", "坚持不懈"],
+      "styles": ["galloping", "friendly-mentor", "rigorous"]
+    },
+    {
+      "name": "黄子轩",
+      "gender": "男",
+      "tags": ["理科见长", "逻辑清晰", "钻研精神", "沉稳内敛", "有潜力"],
+      "styles": ["rigorous", "galloping", "friendly-mentor"]
+    },
+    {
+      "name": "许雅婷",
+      "gender": "女",
+      "tags": ["文理兼优", "善于沟通", "有个性", "创新思维", "综合能力强"],
+      "styles": ["friendly-mentor", "rigorous", "galloping"]
+    },
+    {
+      "name": "马俊杰",
+      "gender": "男",
+      "tags": ["踏实勤奋", "进步迅速", "积极进取", "团队精神", "敢于挑战"],
+      "styles": ["galloping", "rigorous", "friendly-mentor"]
+    },
+    {
+      "name": "韩诗雨",
+      "gender": "女",
+      "tags": ["优秀领导力", "全面发展", "责任感强", "思维敏捷", "追求卓越"],
+      "styles": ["rigorous", "friendly-mentor", "galloping"]
+    }
+  ]
+}

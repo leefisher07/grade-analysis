@@ -1,0 +1,146 @@
+{
+<<<<<<< HEAD
+  "name": "grade-analysis-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "npm run build && electron-builder",
+    "electron:build:win": "npm run build && electron-builder --win",
+    "electron:build:mac": "npm run build && electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.grade-analysis.system",
+    "productName": "睿析成绩分析系统",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "public/icon.png"
+    },
+    "mac": {
+      "target": ["dmg"],
+      "icon": "public/icon.png",
+      "category": "public.app-category.education"
+=======
+  "name": "intelligent-comment-system",
+  "productName": "智能评语系统",
+  "version": "1.0.0",
+  "description": "基于 AI 的智能学生评语生成系统",
+  "author": "智能评语系统开发团队",
+  "private": true,
+  "main": "dist-electron/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && electron-builder",
+    "build:mac": "vite build && electron-builder --mac",
+    "build:win": "vite build && electron-builder --win",
+    "preview": "vite preview",
+    "electron:dev": "vite"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.562.0",
+    "tailwind-merge": "^3.4.0",
+    "vue": "^3.5.24",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "autoprefixer": "^10.4.23",
+    "electron": "^40.0.0",
+    "electron-builder": "^26.4.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-electron-renderer": "^0.14.6",
+    "vue-tsc": "^3.1.4"
+  },
+  "build": {
+    "appId": "com.intelligentcomment.app",
+    "productName": "智能评语系统",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": ["dmg", "zip"],
+      "artifactName": "${productName}-${version}-mac.${ext}"
+    },
+    "win": {
+      "target": ["nsis", "zip"],
+      "artifactName": "${productName}-${version}-win.${ext}"
+>>>>>>> b56face1a95cd2b8af20261f4b81aced32df9c5e
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+<<<<<<< HEAD
+      "shortcutName": "睿析成绩分析系统"
+    }
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "clsx": "^2.1.1",
+    "dexie": "^4.2.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.4",
+    "lucide-react": "^0.560.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.10.1",
+    "recharts": "^3.5.1",
+    "tailwind-merge": "^3.4.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.22",
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "vite-plugin-singlefile": "^2.3.0",
+    "wait-on": "^9.0.3"
+=======
+      "shortcutName": "智能评语系统"
+    }
+>>>>>>> b56face1a95cd2b8af20261f4b81aced32df9c5e
+  }
+}

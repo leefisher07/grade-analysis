@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>清空本地存储</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #f8fafc, #e0f2fe);
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 { color: #1e3a5f; margin-bottom: 20px; }
+        button {
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover { background: #dc2626; }
+        .success {
+            background: #10b981;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            margin-top: 20px;
+            display: none;
+        }
+        .link {
+            margin-top: 20px;
+            padding: 15px;
+            background: #0ea5e9;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧹 清空本地数据</h1>
+        <p>点击下方按钮清空所有本地存储的登录信息和额度数据</p>
+        <button onclick="clearStorage()">清空所有数据</button>
+        <div id="success" class="success">
+            ✅ 数据已清空！<br>
+            <a href="http://localhost:5173" class="link" style="margin-top: 15px;">前往登录页面</a>
+        </div>
+    </div>
+    <script>
+        function clearStorage() {
+            // 清空 localStorage
+            localStorage.clear();
+            
+            // 清空 sessionStorage
+            sessionStorage.clear();
+            
+            // 清空 cookies
+            document.cookie.split(";").forEach(function(c) { 
+                document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+            });
+            
+            // 显示成功消息
+            document.getElementById('success').style.display = 'block';
+            
+            console.log('✅ 所有本地数据已清空');
+            console.log('localStorage:', localStorage);
+            console.log('sessionStorage:', sessionStorage);
+        }
+    </script>
+</body>
+</html>
